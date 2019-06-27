@@ -1,24 +1,24 @@
-# README
+# PFC Calendar
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
+筋トレやダイエットなどの体作りをしている人が, 簡易的に食事管理をするためのWEBアプリケーション.
 
-Things you may want to cover:
+<dl>
+  <dt>Protein</dt>
+  <dd>タンパク質</dd>
+  <dt>Fat</dt>
+  <dd>脂質</dd>
+  <dt>Carbohydrate</dt>
+  <dd>炭水化物</dd>
+</dl>
 
-* Ruby version
+食事に含まれるPFCの量やバランスは異なり, また体作りの目的毎に必要なPFCも考える必要がある.
+そのような計算を簡易的に行えるようにツール化し, カレンダーとして日毎に管理するのが目的.
 
-* System dependencies
+## 使用環境
 
-* Configuration
 
-* Database creation
+## モデル
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 
