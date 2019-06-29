@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ * require_tree .
+ *= require_self
+ */
+
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  padding-top: 80px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  background: #DCD7C5;
+  padding: 0 50px;
+  height: 80px;
+  width: calc(100% - 100px);
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__title {
+  margin-top: 16px;
+  color: white;
+  font-size: 28px;
+  line-height: 48px;
+  font-weight: 800;
+}
+
+.header__title__PFC {
+  color: #ED6C4F;
+}
+
+.header__right {
+  margin-top: 20px;
+  height: 40px;
+  line-height: 40px;
+  color: #5E5E5E;
+}
+
+.header__right__sign-up {
+  display: inline-block;
+  margin-left: 20px;
+  color: white;
+  height: 40px;
+  border-radius: 20px;
+  padding: 0 20px;
+  background: #ED6C4F;
+
+}
+
+.clearfix:after {
+	content: "";
+  display: block;
+  clear: both;
+}
