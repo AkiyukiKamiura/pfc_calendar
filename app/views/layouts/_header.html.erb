@@ -1,11 +1,14 @@
 <header class="header">
   <div class="header__title">
-    <a><span class="header__title__PFC">PFC</span>alendar</a>
+    <a href="/"><span class="header__title__PFC">PFC</span>alendar</a>
   </div>
   <div class="header__right">
-    <a>Log in</a>
-    <a class="header__right__sign-up">
-      Sign up
-    </a>
+    <% if user_signed_in? %>
+      <%= link_to current_user.email, '#', class: 'header__right__sign-up' %>
+      <%= link_to 'Log out', '/users/sign_out', method: :delete, class: 'header__right__log-in' %>
+    <% else %>
+      <%= link_to 'Log in', '/users/sign_in', class: 'header__right__log-in' %>
+      <%= link_to 'Sign up', '/users/sign_up', class: 'header__right__sign-up'%>
+    <% end %>
   </div>
 </header>

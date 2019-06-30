@@ -29,7 +29,7 @@ body {
 }
 
 .content {
-  padding-top: 80px;
+  padding: 80px 50px 0 50px;
 }
 
 .header {
@@ -45,12 +45,20 @@ body {
   justify-content: space-between;
 }
 
+.header a {
+  text-decoration: none;
+}
+
 .header__title {
   margin-top: 16px;
   color: white;
   font-size: 28px;
   line-height: 48px;
   font-weight: 800;
+}
+
+.header__title a {
+  color: white;
 }
 
 .header__title__PFC {
@@ -61,6 +69,10 @@ body {
   margin-top: 20px;
   height: 40px;
   line-height: 40px;
+}
+
+.header__right__log-in {
+  margin-left: 20px;
   color: #5E5E5E;
 }
 
@@ -72,7 +84,6 @@ body {
   border-radius: 20px;
   padding: 0 20px;
   background: #ED6C4F;
-
 }
 
 .clearfix:after {
